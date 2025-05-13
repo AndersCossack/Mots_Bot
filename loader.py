@@ -1,11 +1,8 @@
 from aiogram import Bot, Dispatcher
-import configparser
+import os 
+from dotenv import load_dotenv
 
 
-config = configparser.ConfigParser()
-config.read('data/config.ini')
-
-API_BOT = config.get('bot', 'API_BOT').strip()
-
-bot = Bot(API_BOT, parse_mode="HTML")
+load_dotenv()
+bot = Bot(os.getenv('TOKEN'))
 dp = Dispatcher()
