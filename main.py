@@ -4,6 +4,8 @@ from loader import bot, dp
 from handlers.commands import router as commands_router
 from handlers.callback import call_router
 
+from middleware.loggin_middleware import LoggingMiddleware
+
 async def main():
     try:
         print("Bot Start")
@@ -22,6 +24,8 @@ async def main():
         dp.include_router(call_router)
         dp.include_router(commands_router)
         
+        dp.message.middleware(LoggingMiddleware())
+
         await dp.start_polling(bot)
     except Exception as ex:
         print(f"There is an Exception {ex}")

@@ -9,11 +9,16 @@ router = Router()
 
 @router.message(CommandStart())
 async def cmd_start(message: Message):
-    await message.answer("Привіт! Я готовий допомагати!", reply_markup=rkb.reply_start)
+    await message.answer("Привіт! Я готовий допомагати!")
 
 @router.message(Command('help'))
 async def cmd_help(message: Message):    
     await message.answer(help_text)
+
+
+@router.message(Command('keyboard'))
+async def cmd_keyboard(message: Message):
+    await message.answer('Слухаю', reply_markup=rkb.reply_menu)
 
 
 @router.message(lambda msg: msg.text and msg.text.lower() in HELLO_RESPONSES)
@@ -52,5 +57,7 @@ async def handler_messages(message: Message):
         await message.answer(f"Ви надіслали місцезнаходження: {message.location.latitude}, {message.location.longitude}")
     elif message.contact:
         await message.answer(f"Контакт: {message.contact.first_name}{message.contact.phone_number}")
+    elif message.new_chat_members:
+        await message.answer('Здоровеньки були')
     else:
         await message.answer("Отримано повідомлення невизначеного типу")
