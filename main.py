@@ -11,6 +11,14 @@ async def main():
         await  bot.delete_webhook(drop_pending_updates=True)
         print('Webhook deleted')
 
+        await asyncio.sleep(2)
+
+        info = await bot.get_webhook_info()
+        if info.url:
+            print(f'Webhook info after delete: {info.url}')
+        else:
+            print('Webhook successfully removed, switching to polling.')
+
         dp.include_router(call_router)
         dp.include_router(commands_router)
         

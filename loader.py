@@ -1,8 +1,14 @@
 from aiogram import Bot, Dispatcher
-import os 
+import os
 from dotenv import load_dotenv
 
 
-load_dotenv()
-bot = Bot(os.getenv('TOKEN'))
+
+load_dotenv(override=True)
+
+TOKEN = os.getenv('TOKEN')
+if not TOKEN:
+    raise ValueError('Token not found! Check your .env file and make sure TOKEN is set.')
+
+bot = Bot(TOKEN)
 dp = Dispatcher()

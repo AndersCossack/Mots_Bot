@@ -1,4 +1,4 @@
-#!/home/anders/AuthorizedMotsBot/venv/bin/python3
+#!/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
