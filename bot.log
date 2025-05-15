@@ -601,3 +601,6 @@ sqlite3.OperationalError: no such table: users
 2025-05-15 13:08:27,233 - root - До обробника
 2025-05-15 13:08:27,512 - root - Після обробника
 2025-05-15 13:08:27,512 - aiogram.event - Update id=923431307 is handled. Duration 279 ms by bot id=7607433241
+2025-05-15 13:09:39,061 - aiogram.dispatcher - Received SIGINT signal
+2025-05-15 13:09:39,061 - aiogram.dispatcher - Polling stopped for bot @AuthorizedMotsBot id=7607433241 - 'MotsBot'
+2025-05-15 13:09:39,062 - aiogram.dispatcher - Polling stopped
