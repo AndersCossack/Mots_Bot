@@ -15,3 +15,589 @@
 2025-05-14 18:58:59,096 - aiogram.dispatcher - Received SIGINT signal
 2025-05-14 18:58:59,096 - aiogram.dispatcher - Polling stopped for bot @AuthorizedMotsBot id=7607433241 - 'MotsBot'
 2025-05-14 18:58:59,096 - aiogram.dispatcher - Polling stopped
+2025-05-15 11:51:49,403 - aiogram.dispatcher - Start polling
+2025-05-15 11:51:49,440 - aiogram.dispatcher - Run polling for bot @AuthorizedMotsBot id=7607433241 - 'MotsBot'
+2025-05-15 11:52:30,313 - aiogram.dispatcher - Received SIGINT signal
+2025-05-15 11:52:30,313 - aiogram.dispatcher - Polling stopped for bot @AuthorizedMotsBot id=7607433241 - 'MotsBot'
+2025-05-15 11:52:30,313 - aiogram.dispatcher - Polling stopped
+2025-05-15 11:52:52,985 - aiogram.dispatcher - Start polling
+2025-05-15 11:52:53,021 - aiogram.dispatcher - Run polling for bot @AuthorizedMotsBot id=7607433241 - 'MotsBot'
+2025-05-15 11:56:36,662 - aiogram.dispatcher - Received SIGINT signal
+2025-05-15 11:56:36,663 - aiogram.dispatcher - Polling stopped for bot @AuthorizedMotsBot id=7607433241 - 'MotsBot'
+2025-05-15 11:56:36,663 - aiogram.dispatcher - Polling stopped
+2025-05-15 11:56:41,226 - aiogram.dispatcher - Start polling
+2025-05-15 11:56:41,261 - aiogram.dispatcher - Run polling for bot @AuthorizedMotsBot id=7607433241 - 'MotsBot'
+2025-05-15 11:57:48,497 - aiogram.dispatcher - Received SIGINT signal
+2025-05-15 11:57:48,497 - aiogram.dispatcher - Polling stopped for bot @AuthorizedMotsBot id=7607433241 - 'MotsBot'
+2025-05-15 11:57:48,497 - aiogram.dispatcher - Polling stopped
+2025-05-15 11:58:02,791 - aiogram.dispatcher - Start polling
+2025-05-15 11:58:02,827 - aiogram.dispatcher - Run polling for bot @AuthorizedMotsBot id=7607433241 - 'MotsBot'
+2025-05-15 12:02:15,254 - aiogram.dispatcher - Received SIGINT signal
+2025-05-15 12:02:15,254 - aiogram.dispatcher - Polling stopped for bot @AuthorizedMotsBot id=7607433241 - 'MotsBot'
+2025-05-15 12:02:15,254 - aiogram.dispatcher - Polling stopped
+2025-05-15 12:02:20,735 - aiogram.dispatcher - Start polling
+2025-05-15 12:02:20,771 - aiogram.dispatcher - Run polling for bot @AuthorizedMotsBot id=7607433241 - 'MotsBot'
+2025-05-15 12:04:08,318 - root - Користувач з id: 319669937 використав команду /start
+2025-05-15 12:04:08,318 - root - До обробника
+2025-05-15 12:04:08,319 - root - Помилка при обробці повідомлення: no such table: users
+2025-05-15 12:04:08,319 - aiogram.event - Update id=923431280 is not handled. Duration 1 ms by bot id=7607433241
+2025-05-15 12:04:08,319 - aiogram.event - Cause exception while process update id=923431280 by bot id=7607433241
+OperationalError: no such table: users
+Traceback (most recent call last):
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/middleware/loggin_middleware.py", line 32, in __call__
+    res = await handler(event, data)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/handlers/commands.py", line 23, in cmd_start
+    await cursor.execute('SELECT user_id FROM users WHERE user_id = ?', (user_id,))
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 40, in execute
+    await self._execute(self._cursor.execute, sql, parameters)
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 32, in _execute
+    return await self._conn._execute(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 122, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 105, in run
+    result = function()
+             ^^^^^^^^^^
+sqlite3.OperationalError: no such table: users
+2025-05-15 12:11:09,659 - aiogram.dispatcher - Received SIGINT signal
+2025-05-15 12:11:09,659 - aiogram.dispatcher - Polling stopped for bot @AuthorizedMotsBot id=7607433241 - 'MotsBot'
+2025-05-15 12:11:09,659 - aiogram.dispatcher - Polling stopped
+2025-05-15 12:11:21,205 - aiogram.dispatcher - Start polling
+2025-05-15 12:11:21,242 - aiogram.dispatcher - Run polling for bot @AuthorizedMotsBot id=7607433241 - 'MotsBot'
+2025-05-15 12:11:37,324 - aiogram.dispatcher - Received SIGINT signal
+2025-05-15 12:11:37,324 - aiogram.dispatcher - Polling stopped for bot @AuthorizedMotsBot id=7607433241 - 'MotsBot'
+2025-05-15 12:11:37,324 - aiogram.dispatcher - Polling stopped
+2025-05-15 12:14:39,260 - aiogram.dispatcher - Start polling
+2025-05-15 12:14:39,296 - aiogram.dispatcher - Run polling for bot @AuthorizedMotsBot id=7607433241 - 'MotsBot'
+2025-05-15 12:15:11,641 - root - Користувач з id: 319669937 використав команду /start
+2025-05-15 12:15:11,641 - root - До обробника
+2025-05-15 12:15:11,642 - root - Помилка при обробці повідомлення: no such table: user
+2025-05-15 12:15:11,642 - aiogram.event - Update id=923431281 is not handled. Duration 1 ms by bot id=7607433241
+2025-05-15 12:15:11,642 - aiogram.event - Cause exception while process update id=923431281 by bot id=7607433241
+OperationalError: no such table: user
+Traceback (most recent call last):
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/middleware/loggin_middleware.py", line 32, in __call__
+    res = await handler(event, data)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/handlers/commands.py", line 25, in cmd_start
+    await cursor.execute('INSERT INTO user (user_id, username, first_name, last_name, time_added) VALUES (?, ?, ?, ?, ?)', (user_id, username, first_name, last_name, time_added))
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 40, in execute
+    await self._execute(self._cursor.execute, sql, parameters)
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 32, in _execute
+    return await self._conn._execute(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 122, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 105, in run
+    result = function()
+             ^^^^^^^^^^
+sqlite3.OperationalError: no such table: user
+2025-05-15 12:19:09,660 - aiogram.dispatcher - Received SIGINT signal
+2025-05-15 12:19:09,660 - aiogram.dispatcher - Polling stopped for bot @AuthorizedMotsBot id=7607433241 - 'MotsBot'
+2025-05-15 12:19:09,660 - aiogram.dispatcher - Polling stopped
+2025-05-15 12:19:15,350 - aiogram.dispatcher - Start polling
+2025-05-15 12:19:15,392 - aiogram.dispatcher - Run polling for bot @AuthorizedMotsBot id=7607433241 - 'MotsBot'
+2025-05-15 12:19:24,131 - root - Користувач з id: 319669937 використав команду /start
+2025-05-15 12:19:24,131 - root - До обробника
+2025-05-15 12:19:24,320 - root - Помилка при обробці повідомлення: Connection closed
+2025-05-15 12:19:24,320 - aiogram.event - Update id=923431282 is not handled. Duration 189 ms by bot id=7607433241
+2025-05-15 12:19:24,320 - aiogram.event - Cause exception while process update id=923431282 by bot id=7607433241
+ValueError: Connection closed
+Traceback (most recent call last):
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/middleware/loggin_middleware.py", line 32, in __call__
+    res = await handler(event, data)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/handlers/commands.py", line 22, in cmd_start
+    async with conn.cursor() as cursor:
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiosqlite/context.py", line 46, in __aexit__
+    await self._obj.close()
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 72, in close
+    await self._execute(self._cursor.close)
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 32, in _execute
+    return await self._conn._execute(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 115, in _execute
+    raise ValueError("Connection closed")
+ValueError: Connection closed
+2025-05-15 12:29:32,013 - aiogram.dispatcher - Received SIGINT signal
+2025-05-15 12:29:32,014 - aiogram.dispatcher - Polling stopped for bot @AuthorizedMotsBot id=7607433241 - 'MotsBot'
+2025-05-15 12:29:32,014 - aiogram.dispatcher - Polling stopped
+2025-05-15 12:29:39,367 - aiogram.dispatcher - Start polling
+2025-05-15 12:29:39,402 - aiogram.dispatcher - Run polling for bot @AuthorizedMotsBot id=7607433241 - 'MotsBot'
+2025-05-15 12:29:42,984 - root - Користувач з id: 319669937 використав команду /start
+2025-05-15 12:29:42,984 - root - До обробника
+2025-05-15 12:29:42,985 - root - Після обробника
+2025-05-15 12:29:42,985 - aiogram.event - Update id=923431283 is handled. Duration 1 ms by bot id=7607433241
+2025-05-15 12:30:17,339 - root - Користувач з id: 319669937 використав команду /myinfo
+2025-05-15 12:30:17,339 - root - До обробника
+2025-05-15 12:30:17,340 - root - Помилка при обробці повідомлення: near "users": syntax error
+2025-05-15 12:30:17,340 - aiogram.event - Update id=923431284 is not handled. Duration 1 ms by bot id=7607433241
+2025-05-15 12:30:17,340 - aiogram.event - Cause exception while process update id=923431284 by bot id=7607433241
+OperationalError: near "users": syntax error
+Traceback (most recent call last):
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/middleware/loggin_middleware.py", line 32, in __call__
+    res = await handler(event, data)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/handlers/commands.py", line 42, in cmd_myinfo
+    await cursor.execute('SELECT user_id, username, first_name, last_name, time_added FORM users WHERE user_id = ?', (user_id,))
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 40, in execute
+    await self._execute(self._cursor.execute, sql, parameters)
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 32, in _execute
+    return await self._conn._execute(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 122, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 105, in run
+    result = function()
+             ^^^^^^^^^^
+sqlite3.OperationalError: near "users": syntax error
+2025-05-15 12:32:00,706 - aiogram.dispatcher - Received SIGINT signal
+2025-05-15 12:32:00,706 - aiogram.dispatcher - Polling stopped for bot @AuthorizedMotsBot id=7607433241 - 'MotsBot'
+2025-05-15 12:32:00,706 - aiogram.dispatcher - Polling stopped
+2025-05-15 12:32:06,852 - aiogram.dispatcher - Start polling
+2025-05-15 12:32:06,888 - aiogram.dispatcher - Run polling for bot @AuthorizedMotsBot id=7607433241 - 'MotsBot'
+2025-05-15 12:32:17,814 - root - Користувач з id: 319669937 використав команду /myinfo
+2025-05-15 12:32:17,814 - root - До обробника
+2025-05-15 12:32:17,987 - root - Після обробника
+2025-05-15 12:32:17,987 - aiogram.event - Update id=923431285 is handled. Duration 173 ms by bot id=7607433241
+2025-05-15 12:32:44,645 - root - Користувач з id: 319669937 використав команду /update_username
+2025-05-15 12:32:44,645 - root - До обробника
+2025-05-15 12:32:44,701 - root - Після обробника
+2025-05-15 12:32:44,701 - aiogram.event - Update id=923431286 is handled. Duration 57 ms by bot id=7607433241
+2025-05-15 12:32:56,742 - root - Користувач з id: 319669937 використав команду /update_user name @Cossack
+2025-05-15 12:32:56,742 - root - До обробника
+2025-05-15 12:32:56,813 - root - Після обробника
+2025-05-15 12:32:56,813 - aiogram.event - Update id=923431287 is handled. Duration 71 ms by bot id=7607433241
+2025-05-15 12:33:09,098 - root - Користувач з id: 319669937 використав команду /myindo
+2025-05-15 12:33:09,098 - root - До обробника
+2025-05-15 12:33:09,243 - root - Після обробника
+2025-05-15 12:33:09,243 - aiogram.event - Update id=923431288 is handled. Duration 146 ms by bot id=7607433241
+2025-05-15 12:33:15,762 - root - Користувач з id: 319669937 використав команду /myinfo
+2025-05-15 12:33:15,763 - root - До обробника
+2025-05-15 12:33:15,857 - root - Після обробника
+2025-05-15 12:33:15,857 - aiogram.event - Update id=923431289 is handled. Duration 95 ms by bot id=7607433241
+2025-05-15 12:33:27,132 - root - Користувач з id: 319669937 використав команду /update_username
+2025-05-15 12:33:27,132 - root - До обробника
+2025-05-15 12:33:27,202 - root - Після обробника
+2025-05-15 12:33:27,203 - aiogram.event - Update id=923431290 is handled. Duration 71 ms by bot id=7607433241
+2025-05-15 12:33:30,067 - root - Користувач з id: 319669937 використав команду Anders
+2025-05-15 12:33:30,068 - root - До обробника
+2025-05-15 12:33:30,136 - root - Після обробника
+2025-05-15 12:33:30,136 - aiogram.event - Update id=923431291 is handled. Duration 69 ms by bot id=7607433241
+2025-05-15 12:33:38,784 - root - Користувач з id: 319669937 використав команду /myindo
+2025-05-15 12:33:38,784 - root - До обробника
+2025-05-15 12:33:38,856 - root - Після обробника
+2025-05-15 12:33:38,856 - aiogram.event - Update id=923431292 is handled. Duration 72 ms by bot id=7607433241
+2025-05-15 12:33:43,398 - root - Користувач з id: 319669937 використав команду /myinfo
+2025-05-15 12:33:43,398 - root - До обробника
+2025-05-15 12:33:43,530 - root - Після обробника
+2025-05-15 12:33:43,530 - aiogram.event - Update id=923431293 is handled. Duration 132 ms by bot id=7607433241
+2025-05-15 12:33:54,363 - root - Користувач з id: 319669937 використав команду /update_username
+2025-05-15 12:33:54,363 - root - До обробника
+2025-05-15 12:33:54,430 - root - Після обробника
+2025-05-15 12:33:54,430 - aiogram.event - Update id=923431294 is handled. Duration 67 ms by bot id=7607433241
+2025-05-15 12:34:05,088 - root - Користувач з id: 319669937 використав команду /update_username @DICK
+2025-05-15 12:34:05,088 - root - До обробника
+2025-05-15 12:34:05,187 - root - Після обробника
+2025-05-15 12:34:05,187 - aiogram.event - Update id=923431295 is handled. Duration 99 ms by bot id=7607433241
+2025-05-15 12:34:22,059 - root - Користувач з id: 319669937 використав команду /myinfo
+2025-05-15 12:34:22,060 - root - До обробника
+2025-05-15 12:34:22,157 - root - Після обробника
+2025-05-15 12:34:22,158 - aiogram.event - Update id=923431296 is handled. Duration 98 ms by bot id=7607433241
+2025-05-15 12:34:31,133 - root - Користувач з id: 319669937 використав команду /deleteme
+2025-05-15 12:34:31,133 - root - До обробника
+2025-05-15 12:34:31,276 - root - Після обробника
+2025-05-15 12:34:31,276 - aiogram.event - Update id=923431297 is handled. Duration 143 ms by bot id=7607433241
+2025-05-15 12:34:36,964 - root - Користувач з id: 319669937 використав команду /myinfo
+2025-05-15 12:34:36,964 - root - До обробника
+2025-05-15 12:34:37,033 - root - Після обробника
+2025-05-15 12:34:37,033 - aiogram.event - Update id=923431298 is handled. Duration 69 ms by bot id=7607433241
+2025-05-15 12:34:46,384 - root - Користувач з id: 319669937 використав команду /delete_me
+2025-05-15 12:34:46,384 - root - До обробника
+2025-05-15 12:34:46,483 - root - Після обробника
+2025-05-15 12:34:46,483 - aiogram.event - Update id=923431299 is handled. Duration 98 ms by bot id=7607433241
+2025-05-15 12:35:02,525 - root - Користувач з id: 319669937 використав команду /myinfo
+2025-05-15 12:35:02,525 - root - До обробника
+2025-05-15 12:35:02,591 - root - Після обробника
+2025-05-15 12:35:02,591 - aiogram.event - Update id=923431300 is handled. Duration 67 ms by bot id=7607433241
+2025-05-15 12:38:08,889 - root - Користувач з id: 319669937 використав команду /help
+2025-05-15 12:38:08,889 - root - До обробника
+2025-05-15 12:38:08,952 - root - Після обробника
+2025-05-15 12:38:08,952 - aiogram.event - Update id=923431301 is handled. Duration 63 ms by bot id=7607433241
+2025-05-15 12:39:40,875 - root - Користувач з id: 319669937 використав команду /update_username
+2025-05-15 12:39:40,875 - root - До обробника
+2025-05-15 12:39:41,030 - root - Після обробника
+2025-05-15 12:39:41,030 - aiogram.event - Update id=923431302 is handled. Duration 155 ms by bot id=7607433241
+2025-05-15 12:47:09,003 - aiogram.dispatcher - Received SIGINT signal
+2025-05-15 12:47:09,003 - aiogram.dispatcher - Polling stopped for bot @AuthorizedMotsBot id=7607433241 - 'MotsBot'
+2025-05-15 12:47:09,004 - aiogram.dispatcher - Polling stopped
+2025-05-15 13:01:26,259 - aiogram.dispatcher - Start polling
+2025-05-15 13:01:26,295 - aiogram.dispatcher - Run polling for bot @AuthorizedMotsBot id=7607433241 - 'MotsBot'
+2025-05-15 13:02:04,251 - root - Користувач з id: 319669937 використав команду /myinfo
+2025-05-15 13:02:04,251 - root - До обробника
+2025-05-15 13:02:04,252 - root - Помилка при обробці повідомлення: no such table: users
+2025-05-15 13:02:04,252 - aiogram.event - Update id=923431303 is not handled. Duration 1 ms by bot id=7607433241
+2025-05-15 13:02:04,252 - aiogram.event - Cause exception while process update id=923431303 by bot id=7607433241
+OperationalError: no such table: users
+Traceback (most recent call last):
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/middleware/loggin_middleware.py", line 50, in __call__
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/middleware/loggin_middleware.py", line 33, in __call__
+    res = await handler(event, data)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/handlers/commands.py", line 40, in cmd_myinfo
+    await cursor.execute('SELECT user_id, username, first_name, last_name, time_added FROM users WHERE user_id = ?', (user_id,))
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 40, in execute
+    await self._execute(self._cursor.execute, sql, parameters)
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 32, in _execute
+    return await self._conn._execute(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 122, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 105, in run
+    result = function()
+             ^^^^^^^^^^
+sqlite3.OperationalError: no such table: users
+2025-05-15 13:04:11,051 - aiogram.dispatcher - Received SIGINT signal
+2025-05-15 13:04:11,051 - aiogram.dispatcher - Polling stopped for bot @AuthorizedMotsBot id=7607433241 - 'MotsBot'
+2025-05-15 13:04:11,051 - aiogram.dispatcher - Polling stopped
+2025-05-15 13:04:15,922 - aiogram.dispatcher - Start polling
+2025-05-15 13:04:15,959 - aiogram.dispatcher - Run polling for bot @AuthorizedMotsBot id=7607433241 - 'MotsBot'
+2025-05-15 13:04:20,693 - root - Користувач з id: 319669937 використав команду /start
+2025-05-15 13:04:20,693 - root - До обробника
+2025-05-15 13:04:20,830 - root - Після обробника
+2025-05-15 13:04:20,831 - aiogram.event - Update id=923431304 is handled. Duration 139 ms by bot id=7607433241
+2025-05-15 13:04:25,432 - root - Користувач з id: 319669937 використав команду /myinfo
+2025-05-15 13:04:25,432 - root - До обробника
+2025-05-15 13:04:25,432 - root - Помилка при обробці повідомлення: no such table: users
+2025-05-15 13:04:25,433 - aiogram.event - Update id=923431305 is not handled. Duration 1 ms by bot id=7607433241
+2025-05-15 13:04:25,433 - aiogram.event - Cause exception while process update id=923431305 by bot id=7607433241
+OperationalError: no such table: users
+Traceback (most recent call last):
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/middleware/loggin_middleware.py", line 50, in __call__
+    result = await handler(event, data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/middleware/loggin_middleware.py", line 33, in __call__
+    res = await handler(event, data)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/handlers/commands.py", line 40, in cmd_myinfo
+    await cursor.execute('SELECT user_id, username, first_name, last_name, time_added FROM users WHERE user_id = ?', (user_id,))
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 40, in execute
+    await self._execute(self._cursor.execute, sql, parameters)
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 32, in _execute
+    return await self._conn._execute(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 122, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/anders/VSCodeLearning/Authorized_Mots_Bot/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 105, in run
+    result = function()
+             ^^^^^^^^^^
+sqlite3.OperationalError: no such table: users
+2025-05-15 13:04:36,868 - aiogram.dispatcher - Received SIGINT signal
+2025-05-15 13:04:36,869 - aiogram.dispatcher - Polling stopped for bot @AuthorizedMotsBot id=7607433241 - 'MotsBot'
+2025-05-15 13:04:36,869 - aiogram.dispatcher - Polling stopped
+2025-05-15 13:08:14,859 - aiogram.dispatcher - Start polling
+2025-05-15 13:08:14,894 - aiogram.dispatcher - Run polling for bot @AuthorizedMotsBot id=7607433241 - 'MotsBot'
+2025-05-15 13:08:18,620 - root - Користувач з id: 319669937 використав команду /start
+2025-05-15 13:08:18,620 - root - До обробника
+2025-05-15 13:08:18,621 - root - Після обробника
+2025-05-15 13:08:18,621 - aiogram.event - Update id=923431306 is handled. Duration 1 ms by bot id=7607433241
+2025-05-15 13:08:27,233 - root - Користувач з id: 319669937 використав команду /myinfo
+2025-05-15 13:08:27,233 - root - До обробника
+2025-05-15 13:08:27,512 - root - Після обробника
+2025-05-15 13:08:27,512 - aiogram.event - Update id=923431307 is handled. Duration 279 ms by bot id=7607433241

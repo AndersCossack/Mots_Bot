@@ -4,7 +4,9 @@ from loader import bot, dp
 from handlers.commands import router as commands_router
 from handlers.callback import call_router
 
-from middleware.loggin_middleware import LoggingMiddleware
+from middleware.loggin_middleware import LoggingMiddleware #DBSessionMiddleware
+
+from database.create_table import create_table
 
 async def main():
     try:
@@ -23,7 +25,10 @@ async def main():
 
         dp.include_router(call_router)
         dp.include_router(commands_router)
+
+        await create_table()
         
+        #dp.message.middleware(DBSessionMiddleware('bot_database.db'))
         dp.message.middleware(LoggingMiddleware())
 
         await dp.start_polling(bot)

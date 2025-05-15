@@ -1,6 +1,7 @@
 import logging
-from aiogram import BaseMiddleware
+from aiogram.dispatcher.middlewares.base import BaseMiddleware
 from aiogram.types import Message
+from aiosqlite import connect
 from typing import Any, Callable, Dict, Awaitable
 
 logging.basicConfig(
@@ -36,3 +37,21 @@ class LoggingMiddleware(BaseMiddleware):
                   logging.error(f'Помилка при обробці повідомлення: {e}')
                   raise
     
+
+
+    
+"""
+class DBSessionMiddleware(BaseMiddleware):
+      def __init__(self, db_path: str):
+            super().__init__()
+            self.db_path = db_path  
+
+      async def __call__(self, handler, event, data):
+            conn = await connect(self.db_path)
+            try:
+                  data['db'] = conn 
+                  result = await handler(event, data)
+                  return result
+            finally:
+                  await conn.close()
+"""
